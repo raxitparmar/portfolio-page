@@ -1,0 +1,339 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;;
+}
+
+body{
+   
+    background-color: rgb(4, 26, 26);
+    color: #ededed;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    z-index: 1;
+    margin-top:20px;
+}
+
+.logo{
+    position:relative;
+    font-size: 25px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:100%;
+    background: rgb(4, 26, 26);
+    animation: showright 1s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.nav-bar a{
+    font-size: 18px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:35px;
+    transition: 0.3s;
+}
+
+.nav-bar a.active{
+    color:rgb(0, 255, 221);
+}
+
+.nav-bar a:hover{
+    color:rgb(0, 255, 221);
+    font-size:20px ;
+}
+
+.home{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding:0 10%;
+    color:#ededed;
+   
+}
+.home-content{
+   
+    max-width:600px;
+   
+}
+
+.home-content h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:100%;
+    background:  rgb(4, 26, 26);
+    animation: showright 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+
+.home-content h3{
+    position:relative;
+    font-size: 32px;
+    font-weight: 700;
+    color:  rgb(0, 202, 175);
+}
+
+.home-content h3::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:100%;
+    background:  rgb(4, 26, 26);
+    animation: showright 1s ease forwards;
+    animation-delay: 0.6s;
+}
+
+
+.home-content p{
+    position: relative;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.home-content p::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:100%;
+    background:  rgb(4, 26, 26);
+    animation: showright 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+.btn{
+    position: relative;
+    height:50px;
+    width:350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn ::before{
+    content: " ";
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0;
+    background-color: rgb(4, 26, 26); 
+    transition: 0.5s;
+    z-index: -1;
+
+}
+
+
+.btn::after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:100%;
+    background:rgb(4, 26, 26);
+    animation: showright 1s ease forwards;
+    animation-delay: 1.2s;
+    z-index: 5;
+}
+
+.btn a{ 
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:150px;
+    border:2px solid  rgb(0, 202, 175);
+    background-color:  rgb(0, 202, 175);
+    border-radius: 8px ;
+    font-size:19px;
+    color: rgb(4, 26, 26);
+    text-decoration: none;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+
+.btn a:nth-child(2){
+    background-color: transparent;
+    color: rgb(0, 202, 175);
+   
+}
+
+
+.btn a:hover::before{
+    width:100%;
+}
+
+.btn a:nth-child(2)::before{
+    background-color: rgb(0, 202, 175) ;
+}
+.btn a:nth-child(2):hover{
+    color: rgb(4, 26, 26);
+}
+
+.btn a:hover{
+    color: rgb(0, 202, 175);
+}
+
+.home-icon{
+    position: relative;
+   display: flex;
+   justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+    width:200px;
+}
+
+.home-icon::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:100%;
+    background: rgb(4, 26, 26);
+    animation: showright 1s ease forwards;
+    animation-delay: 1.6s;
+    z-index: 10;
+}
+
+.home-icon a{
+    position:relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    width:40px;
+    border:2px solid  rgb(0, 202, 175);
+    border-radius: 50%;
+    background: transparent;
+    color:rgb(0, 202, 175);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.home-icon a::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:0;
+    background-color: rgb(0, 202, 175) ;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.home-icon a:hover:before{
+   width:100%;
+}
+
+.home-icon a:hover{
+    color: rgb(4, 26, 26);
+}
+
+.img{
+    background-image: url('imgpro3.png') ;
+    background-size: cover;
+    
+    margin-left: 200px;
+    border: 2px solid rgb(0, 202, 175) 0.6;
+    border-radius: 50%;
+    height:400px;
+    width:400px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 70px -10px  rgb(0, 202, 175);
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+
+
+    /* -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));; */
+}
+
+
+.imghover{
+    position: absolute;
+    top:0;
+    right:100px;
+    width:550px;
+    height:100%;
+   /* border:1px solid red; */
+    background: transparent;
+    transition: 1s;
+    animation: noactive 0.1s forwards;
+    animation-delay: 3s;
+    pointer-events: none;
+}
+
+.imghover::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:100%;
+    background: rgb(4, 26, 26);
+    animation: showright 1s ease forwards;
+    animation-delay: 2s;
+    z-index: 100;
+}
+
+.imghover:hover{
+    background-color: rgb(4, 26, 26); ;
+    opacity: 0.8;
+}
+
+
+@keyframes showright{
+    100%{
+        width:0;
+    }
+}
+
+@keyframes noactive{
+    100%{
+        pointer-events: auto;
+    }
+}
